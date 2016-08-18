@@ -5,9 +5,8 @@ MAINTAINER sadoknet@gmail.com
 RUN \
   apt-get -y update && \
   apt-get -y install \
-  curl vim wget git build-essential make gcc nasm mlocate unixODBC unixODBC-dev \
-  nginx supervisor \
-  net-tools libxrender1
+  curl vim wget git build-essential make gcc nasm mlocate \
+  nginx supervisor
 
 RUN echo "deb http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list.d/dotdeb.org.list && \
     echo "deb-src http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list.d/dotdeb.org.list && \
