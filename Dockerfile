@@ -42,10 +42,6 @@ WORKDIR /var/www
 
 RUN usermod -u 1000 www-data
 
-#in case Symfony application
-#RUN chown -R www-data:www-data /var/www/app/cache
-#RUN chown -R www-data:www-data /var/www/app/logs
-
 
 EXPOSE 80
 
