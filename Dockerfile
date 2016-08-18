@@ -42,9 +42,6 @@ WORKDIR /var/www
 
 RUN usermod -u 1000 www-data
 
-RUN touch /var/www/web/index.php && \
-    echo "<?php phpinfo();"  >> /var/www/web/index.php
-
 #in case Symfony application
 #RUN chown -R www-data:www-data /var/www/app/cache
 #RUN chown -R www-data:www-data /var/www/app/logs
