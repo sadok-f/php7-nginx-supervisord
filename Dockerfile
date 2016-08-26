@@ -35,11 +35,6 @@ RUN \
     mv phpunit.phar /usr/local/bin/phpunit && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-#install Symfony installer
-RUN \
-    curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony && \
-    chmod a+x /usr/local/bin/symfony
-
 
 ADD . /var/www
 WORKDIR /var/www
