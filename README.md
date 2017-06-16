@@ -7,7 +7,7 @@ Docker container runs supervisord to manage php7 and nginx processes
     $ docker pull sadokf/php7-nginx-supervisord
 ```
 ```sh
-    $ docker run -t -d -i -p 8080:80 sadokf/php7-nginx-supervisord
+    $ docker run -itd -p 8080:80 sadokf/php7-nginx-supervisord
 ```
 
 
