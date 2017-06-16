@@ -19,7 +19,7 @@ RUN apt-get update -yqq \
 # Install PHP7 extensions
 RUN docker-php-ext-install pdo_mysql \
     pdo_sqlite opcache json calendar gd \
-    bcmath xml zip bz2 mbstring mcrypt curl
+    bcmath xml zip bz2 mbstring mcrypt curl sockets
 
 # Install PECL extensions
 RUN pecl install xdebug \
