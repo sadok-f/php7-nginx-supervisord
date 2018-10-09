@@ -1,5 +1,5 @@
 # php7-nginx-supervisord
-Docker container runs supervisord to manage php7 and nginx processes
+Docker container runs supervisord to manage php7.2 and nginx processes
 
 ## Usage
 
