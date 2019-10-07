@@ -13,7 +13,7 @@ RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 
 # Install PHP7 dependencies
 RUN apt-get update -yqq \
-    && apt-get -y install libsqlite3-dev libcurl4-openssl-dev libpng-dev libicu-dev libc-client-dev libsodium-dev libxml2-dev libxslt-dev libssl-dev libbz2-dev libfreetype6-dev libjpeg62-turbo-dev
+    && apt-get -y install libsqlite3-dev libcurl4-openssl-dev libpng-dev libicu-dev libc-client-dev libsodium-dev libxml2-dev libxslt-dev libssl-dev libbz2-dev libfreetype6-dev libjpeg62-turbo-dev libzip-dev
 
 # Install PHP7 extensions
 RUN docker-php-ext-install pdo_mysql \
